@@ -36,6 +36,7 @@
 		4FF540EC1E25FBE2004C9F5B /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		4FF540EE1E25FDAF004C9F5B /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		4FF540F01E25FFF9004C9F5B /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		4FF540F21E261BF4004C9F5B /* SocialFirebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialFirebase.entitlements; sourceTree = "<group>"; };
 		59172750D0D691E9854BD8E0 /* Pods-SocialFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialFirebase/Pods-SocialFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		755D24906BA6A46A24CD0920 /* Pods_SocialFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +83,7 @@
 		4FF540CB1E25D8A5004C9F5B /* SocialFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				4FF540F21E261BF4004C9F5B /* SocialFirebase.entitlements */,
 				4FF540E91E25F640004C9F5B /* Utilities */,
 				4FF540E21E25DBA6004C9F5B /* Model */,
 				4FF540E31E25DBAC004C9F5B /* View */,
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 85PB5L2AC9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -393,6 +400,7 @@
 			baseConfigurationReference = 59172750D0D691E9854BD8E0 /* Pods-SocialFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocialFirebase/SocialFirebase.entitlements;
 				DEVELOPMENT_TEAM = 85PB5L2AC9;
 				INFOPLIST_FILE = SocialFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -407,6 +415,7 @@
 			baseConfigurationReference = 28BB8A37711773EA03F538A4 /* Pods-SocialFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocialFirebase/SocialFirebase.entitlements;
 				DEVELOPMENT_TEAM = 85PB5L2AC9;
 				INFOPLIST_FILE = SocialFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
