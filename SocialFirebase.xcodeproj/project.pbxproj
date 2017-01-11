@@ -20,6 +20,7 @@
 		4FF540F11E25FFF9004C9F5B /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF540F01E25FFF9004C9F5B /* FancyBtn.swift */; };
 		4FF540F41E2630EE004C9F5B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF540F31E2630EE004C9F5B /* FeedVC.swift */; };
 		4FF540F61E2647E7004C9F5B /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF540F51E2647E7004C9F5B /* CircleView.swift */; };
+		4FF540F81E26E062004C9F5B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF540F71E26E062004C9F5B /* PostCell.swift */; };
 		8B64B927485B6332FE8BF1C8 /* Pods_SocialFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755D24906BA6A46A24CD0920 /* Pods_SocialFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		4FF540F21E261BF4004C9F5B /* SocialFirebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialFirebase.entitlements; sourceTree = "<group>"; };
 		4FF540F31E2630EE004C9F5B /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		4FF540F51E2647E7004C9F5B /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		4FF540F71E26E062004C9F5B /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		59172750D0D691E9854BD8E0 /* Pods-SocialFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialFirebase/Pods-SocialFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		755D24906BA6A46A24CD0920 /* Pods_SocialFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				4FF540EE1E25FDAF004C9F5B /* FancyField.swift */,
 				4FF540F01E25FFF9004C9F5B /* FancyBtn.swift */,
 				4FF540F51E2647E7004C9F5B /* CircleView.swift */,
+				4FF540F71E26E062004C9F5B /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				4FF540E81E25F5C7004C9F5B /* FancyView.swift in Sources */,
 				4FF540EB1E25F651004C9F5B /* Constants.swift in Sources */,
 				4FF540F11E25FFF9004C9F5B /* FancyBtn.swift in Sources */,
+				4FF540F81E26E062004C9F5B /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

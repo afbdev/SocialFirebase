@@ -11,19 +11,26 @@ import Firebase
 import SwiftKeychainWrapper
 
 class FeedVC: UIViewController {
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        tableView.delegate = self
+        tableView.dataSource = self
         
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    
+    
+    
 
-    @IBAction func signInTapped(_ sender: Any) {
+    @IBAction func signOutTapped(_ sender: UIButton) {
         
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("ID removed from keychain \(keychainResult)")
@@ -34,4 +41,18 @@ class FeedVC: UIViewController {
     
 
 
+}
+
+extension FeedVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+    }
+    
 }
