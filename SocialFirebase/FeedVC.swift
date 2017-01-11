@@ -18,6 +18,10 @@ class FeedVC: UIViewController {
         
         
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     @IBAction func signInTapped(_ sender: Any) {
         

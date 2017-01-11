@@ -29,10 +29,10 @@ class SignInVC: UIViewController {
             performSegue(withIdentifier: "goToFeed", sender: nil)
         }
     }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-
     
     
     @IBAction func facebookBtnTapped(_ sender: Any) {

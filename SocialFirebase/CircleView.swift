@@ -1,14 +1,14 @@
 //
-//  FancyView.swift
+//  CircleView.swift
 //  SocialFirebase
 //
-//  Created by afbdev on 1/10/17.
+//  Created by afbdev on 1/11/17.
 //  Copyright © 2017 afbdev. All rights reserved.
 //
 
 import UIKit
 
-class FancyView: UIView {
+class CircleView: UIImageView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,9 +17,17 @@ class FancyView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        
-        layer.cornerRadius = 2.0
-        
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        layer.cornerRadius = self.frame.width / 2
+    }
+    
+//    override func draw(_ rect: CGRect) {
+//        super.draw(rect)
+//        layer.cornerRadius = self.frame.width / 2
+//    }
+
 }
