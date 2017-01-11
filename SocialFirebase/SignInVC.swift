@@ -13,16 +13,22 @@ import FBSDKLoginKit
 
 class SignInVC: UIViewController {
 
+    @IBOutlet var emailField: FancyField!
+    @IBOutlet var passwordField: FancyField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
+    
     @IBAction func facebookBtnTapped(_ sender: Any) {
         
         let facebookLogin = FBSDKLoginManager()
@@ -40,16 +46,53 @@ class SignInVC: UIViewController {
         }
     }
     
+    
     func firebaseAuth(_ credential: FIRAuthCredential) {
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
             if error != nil {
                 print("FireBase: Unable to authenticate with Firebase - \(error)")
             } else {
                 print("FireBase: Successfully authenticated with Firebase")
-                
             }
         })
     }
 
+    
+    @IBAction func signInTapped(_ sender: Any) {
+        
+        // TODO: ADD ALERTS FOR VARIOUS SCENARIOS
+        
+        if let email = emailField.text, let password = passwordField.text {
+            FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+                if (error == nil) {
+                    // Success
+                    print("EmailAuth: User authenticated with Firebase")
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+                        if (error != nil) {
+                            print("EmailAuth: Unable to auth with Firebase using email")
+                        } else {
+                            print("EmailAuth: Successfuly created user with Firebase")
+                        }
+                    })
+                }
+            })
+        }
+    }
+    
+    
+    
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
 
