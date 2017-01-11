@@ -13,6 +13,7 @@ target 'SocialFirebase' do
   pod 'FBSDKCoreKit'
   pod 'FBSDKShareKit'
   pod 'FBSDKLoginKit'
+  pod 'SwiftKeychainWrapper'
   
 
 end
