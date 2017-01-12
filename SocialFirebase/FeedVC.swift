@@ -30,7 +30,7 @@ class FeedVC: UIViewController {
     
     
 
-    @IBAction func signOutTapped(_ sender: UIButton) {
+    @IBAction func signOutTapped(_ sender: AnyObject) {
         
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("ID removed from keychain \(keychainResult)")
