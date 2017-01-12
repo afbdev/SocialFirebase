@@ -22,6 +22,7 @@
 		4FF540F61E2647E7004C9F5B /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF540F51E2647E7004C9F5B /* CircleView.swift */; };
 		4FF540F81E26E062004C9F5B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF540F71E26E062004C9F5B /* PostCell.swift */; };
 		4FF540FB1E27147E004C9F5B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF540FA1E27147E004C9F5B /* DataService.swift */; };
+		4FF540FD1E273D19004C9F5B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF540FC1E273D19004C9F5B /* Post.swift */; };
 		8B64B927485B6332FE8BF1C8 /* Pods_SocialFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755D24906BA6A46A24CD0920 /* Pods_SocialFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		4FF540F51E2647E7004C9F5B /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		4FF540F71E26E062004C9F5B /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		4FF540FA1E27147E004C9F5B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4FF540FC1E273D19004C9F5B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		59172750D0D691E9854BD8E0 /* Pods-SocialFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialFirebase/Pods-SocialFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		755D24906BA6A46A24CD0920 /* Pods_SocialFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,6 +106,7 @@
 		4FF540E21E25DBA6004C9F5B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4FF540FC1E273D19004C9F5B /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				4FF540F61E2647E7004C9F5B /* CircleView.swift in Sources */,
 				4FF540EF1E25FDAF004C9F5B /* FancyField.swift in Sources */,
 				4FF540CF1E25D8A5004C9F5B /* SignInVC.swift in Sources */,
+				4FF540FD1E273D19004C9F5B /* Post.swift in Sources */,
 				4FF540ED1E25FBE2004C9F5B /* RoundBtn.swift in Sources */,
 				4FF540CD1E25D8A5004C9F5B /* AppDelegate.swift in Sources */,
 				4FF540FB1E27147E004C9F5B /* DataService.swift in Sources */,
