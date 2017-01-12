@@ -94,11 +94,11 @@
 			isa = PBXGroup;
 			children = (
 				4FF540F21E261BF4004C9F5B /* SocialFirebase.entitlements */,
+				4FF540F91E271464004C9F5B /* Services */,
 				4FF540E21E25DBA6004C9F5B /* Model */,
 				4FF540E31E25DBAC004C9F5B /* View */,
 				4FF540E41E25DBB1004C9F5B /* Controller */,
 				4FF540E91E25F640004C9F5B /* Utilities */,
-				4FF540F91E271464004C9F5B /* Services */,
 			);
 			path = SocialFirebase;
 			sourceTree = "<group>";
